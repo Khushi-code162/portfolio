@@ -1,0 +1,120 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+  background: #161c36;
+  color:#e7f3fd;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 30px; /* Adds spacing between text & image */
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+/* Left Side - Image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side - Text */
+.about-text {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #e7f3fd;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #e7f3fd;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Resume Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1d2445;
+  color: #e7f3fd;
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+    gap: 20px;
+  }
+
+  .about-text {
+    padding: 0;
+  }
+
+  .about-image img {
+    width: 75%;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* For very small screens (phones < 480px) */
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 5%;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    width: 85%;
+    max-width: 250px;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}

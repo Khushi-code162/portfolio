@@ -1,0 +1,137 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  padding: 0 10%;
+  background-color: #161c36;
+  color: #e7f3fd;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Left Section */
+.home-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+}
+
+
+.home-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.home-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #83c2f6;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(131, 194, 246, 0.5);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+
+.web {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffb6c1;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5);
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #e7f3fd;
+  margin-top: 10px;
+  max-width: 90%;
+}
+
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .home-left, .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .web {
+    font-size: 1.6rem;
+  }
+}
