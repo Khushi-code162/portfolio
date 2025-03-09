@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll"; // Import from react-scroll
-import "./Navbar.css"; // Import styles
+import { Link } from "react-scroll"; 
+import "./Navbar.css"; 
 import logo from "../assets/logo.jpg"
 
 const Navbar = () => {
@@ -12,12 +12,12 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </h2>
 
-      {/* Hamburger Icon for Mobile */}
+    
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </div>
 
-      {/* Navigation Links */}
+    
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
         <li className="nav-item">
           <Link to="home" smooth={true} duration={500} className="nav-link">

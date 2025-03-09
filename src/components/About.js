@@ -1,16 +1,9 @@
 import React from "react";
 import "./About.css";
-// import profileImage from "../assets/profile.jpg"; // Replace with your image
 
 const About = () => {
   return (
     <section className="about">
-      {/* Left Side - Image */}
-      <div className="about-image">
-        {/* <img src={profileImage} alt="Profile" /> */}
-      </div>
-
-      {/* Right Side - Text Content */}
       <div className="about-text">
         <h2>About Me</h2>
         <p>

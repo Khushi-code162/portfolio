@@ -23,7 +23,6 @@ const Home = () => {
 
   return (
     <section id="home" className="home">
-      {/* Left Section - Text Content */}
       <div className="home-left">
         <div className="home-text">
           <h1 className="name">Hi, I'm Khushi</h1>
@@ -43,7 +42,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Right Section - Profile Image */}
       <div className="hero-image">
         <img src={profileImage} alt="Profile" />
       </div>

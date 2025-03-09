@@ -22,7 +22,7 @@ const Projects = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
-            observer.unobserve(entry.target); // Stop observing once it's visible
+            observer.unobserve(entry.target); 
           }
         });
       },
