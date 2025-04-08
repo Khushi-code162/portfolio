@@ -5,11 +5,20 @@ import "./Projects.css";
 const projects = [
   {
     id: 1,
-    title: "Zerodha Clone",
+    title: "YatriSathi",
+    description:
+      "YatriSathi is a full-stack web application designed to enhance the travel planning experience. The platform allows users to explore various tourist destinations, discover travel packages, and get curated travel information in a clean and user-friendly interface. Built using the MERN stack (MongoDB, Express.js, React, Node.js), the application offers dynamic content rendering and efficient data handling.",
+    demo: "https://yatrisathi.onrender.com",
+    code: "https://github.com/Khushi-code162/YatriSathi",
+  },
+  {
+    id: 2,
+    title: "Trademate",
     description:
       "A frontend clone of the Zerodha trading platform using React. Develop a responsive and intuitive frontend for a trading platform to enhance user engagement and streamline trading activities.",
     demo: "https://trademate-beta.vercel.app/",
     code: "https://github.com/Khushi-code162/trademate",
+    
   },
 ];
 
